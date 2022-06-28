@@ -1,5 +1,6 @@
 import Nav from "./components/nav.jsx"
 import Footer from "./components/footer.jsx";
+import Card from "./components/card.jsx";
 import './App.css'
 
 function App() {
@@ -45,7 +46,25 @@ function App() {
         </div>
         </div>
       </div>
+      <div className="cards">
+        <div className="buzos">
+        <Card nombre="buzos1" descripcion="BUZO HOMBRE" tipo="Buzo hombre naranja talle:L" precio="8999"/>
+        <Card nombre="buzos2" descripcion="BUZO HOMBRE" tipo="Buzo hombre azul talle:M" precio="8999"/>
+        <Card nombre="buzos3" descripcion="BUZO HOMBRE" tipo="Buzo hombre gris talle:L" precio="7999"/>
+        </div>
+        <div className="zapatos">
+        <Card nombre="zapatos1" descripcion="ZAPATO MUJER" tipo="Zapato mujer rojo talle: 35" precio="7500"/>
+        <Card nombre="zapatos2" descripcion="ZAPATO MUJER" tipo="Zapato mujer dorado talle: 30" precio="9999"/>
+        <Card nombre="zapatos3" descripcion="ZAPATO MUJER" tipo="Zapato mujer negro talle: 38" precio="6999"/>
+        </div>
+        <div className="vestidos">
+        <Card nombre="vestidos1" descripcion="VESTIDO MUJER" tipo="Vestido mujer color rojo talle: L" precio="7999"/>
+        <Card nombre="vestidos2" descripcion="VESTIDO MUJER" tipo="Vestido mujer color negro talle: M" precio="8500"/>
+        <Card nombre="vestidos3" descripcion="VESTIDO MUJER" tipo="Vestido mujer color blanco-rojo talle: L" precio="10999"/>
+        </div>
+      </div>
       <Footer/>
+      
     </div>
   );
 }

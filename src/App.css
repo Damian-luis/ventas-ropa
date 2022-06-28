@@ -1,38 +1,116 @@
-.App {
-  text-align: center;
+*{
+  margin: 0px;
+  padding: 0px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.fondo-nav{
+  width: 100%;
+  height: 450px;
+  background-image: url("./assets/nav.jpg");
+  background-size: 100%;
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+
+}
+.title{
+  color: white;
+  font-size: 25px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 200px;
+}
+.quienes-somos{
+  width: 100%;
+  height: 400px;
   display: flex;
+  align-items: center;
+}
+.quienes-somos p{
+  font-size:20px;
+  width: 80%;
+}
+
+
+.categorias{
+  width: 100%;
+  display:flex;
   flex-direction: column;
   align-items: center;
+  row-gap: 120px;
+}
+.categorias-text{
+  display: flex;
+  align-items: center;
+  padding: 80px;
+
+}
+.categorias-text p{
+  text-align: center;
+  font-size:20px
+}
+.categorias-first{
+  display: flex;
+  width: 80%;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.categorias-second{
+  display: flex;
+  width: 80%;
+  justify-content: center;
+}
+.categorias-third{
+  display: flex;
+  width: 80%;
+  justify-content: center;
+}
+.categorias-img-chicas{
+  width: 600px;
+  height: 400px;
+}
+.categorias-img-larga{
+  width: 400px;
+  height: 600px;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+
+@media only screen and (max-width: 600px) {
+
+  .quienes-somos{
+    display: flex;
+    justify-content:center;
   }
-  to {
-    transform: rotate(360deg);
+  .quienes-somos p{
+    width: 80%;
+    text-align: center;
+  }
+  .categorias{
+    row-gap: 0px;
+  }
+  .categorias-text{
+    padding: 200px 20px;
+  }
+  .categorias-first{
+    width: 100%;
+    flex-direction: column;
+  }
+  .categorias-second{
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+  .categorias-third{
+    width: 100%;
+    flex-direction: column;
+  }
+  .categorias-img-chicas{
+    width: 100%;
+  }
+  .categorias-img-larga{
+    width: 100%;
+    height: 800px
   }
 }

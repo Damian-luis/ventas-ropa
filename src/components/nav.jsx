@@ -11,9 +11,9 @@ export default function Nav(){
     <span></span>
   
    
-    <a href="#" className="menu-logo">
-      <span>Tus estilos</span>
-    </a>
+    <div className="menu-logo">
+      <p>Tus estilos</p>
+    </div>
   
     
     <div className="menu">

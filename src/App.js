@@ -29,7 +29,7 @@ function App() {
           <h4>En TUS ESTILOS pensamos en vos</h4>
 
         </div>
-<div className="cart-info">{estado?estado:<p>Tus productos</p>}</div>
+<div className="cart-info">{estado?<p>{estado}</p>:<p>Tus productos</p>}</div>
       <div className="quienes-somos">
           <p>En TUS ESTILOS nos enfocamos en la comodidad para vos o para tu empresa ofreciendote lo mejor en moda para que puedas sacar tu estilo adelante.<br/>
           Contamos con un excelente equipo para poder asesorarte. Nuestro primer objetivo es tu comodidad.</p>

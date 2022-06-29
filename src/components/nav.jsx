@@ -12,7 +12,7 @@ export default function Nav(){
   
    
     <a href="#" className="menu-logo">
-      <img src="https://wweb.dev/resources/navigation-generator/logo-placeholder.png" alt="My Awesome Website"/>
+      <span>Tus estilos</span>
     </a>
   
     

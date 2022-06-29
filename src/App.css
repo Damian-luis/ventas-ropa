@@ -84,9 +84,11 @@
   background-color:rgb(50,180, 50);
   color:white;
   padding: 20px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius:15px ;
 }
 .cart-info p{
-  font-size:50px;
+  font-size:10px;
 }
 .buzos{
   display: flex;
@@ -102,6 +104,16 @@
 
 @media only screen and (max-width: 600px) {
 
+  .cart-info{
+    width:12%;
+    height:15px
+  }
+  .cart-info p{
+    font-size:10px
+  }
+  .fondo-nav{
+    height: 100px;
+  }
   .quienes-somos{
     display: flex;
     justify-content:center;

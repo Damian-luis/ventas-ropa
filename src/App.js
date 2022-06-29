@@ -1,9 +1,23 @@
 import Nav from "./components/nav.jsx"
 import Footer from "./components/footer.jsx";
 import Card from "./components/card.jsx";
+import { useState } from "react";
 import './App.css'
 
+
+
 function App() {
+
+
+  const [estado,setEstado]=useState(0)
+  function handler(e){
+    var toNum=parseInt(e.target.value)
+    
+    var suma=estado+toNum
+    console.log(suma)
+    setEstado(suma)
+  }
+
   return (
     <div className="App">
       <Nav/>
@@ -15,7 +29,7 @@ function App() {
           <h4>En TUS ESTILOS pensamos en vos</h4>
 
         </div>
-
+<div className="cart-info">{estado?estado:<p>Tus productos</p>}</div>
       <div className="quienes-somos">
           <p>En TUS ESTILOS nos enfocamos en la comodidad para vos o para tu empresa ofreciendote lo mejor en moda para que puedas sacar tu estilo adelante.<br/>
           Contamos con un excelente equipo para poder asesorarte. Nuestro primer objetivo es tu comodidad.</p>
@@ -48,19 +62,19 @@ function App() {
       </div>
       <div className="cards">
         <div className="buzos">
-        <Card nombre="buzos1" descripcion="BUZO HOMBRE" tipo="Buzo hombre naranja talle:L" precio="8999"/>
-        <Card nombre="buzos2" descripcion="BUZO HOMBRE" tipo="Buzo hombre azul talle:M" precio="8999"/>
-        <Card nombre="buzos3" descripcion="BUZO HOMBRE" tipo="Buzo hombre gris talle:L" precio="7999"/>
+        <Card nombre="buzos1" descripcion="BUZO HOMBRE" tipo="Buzo hombre naranja talle:L" precio="8999" handler={handler} value="8999"/>
+        <Card nombre="buzos2" descripcion="BUZO HOMBRE" tipo="Buzo hombre azul talle:M" precio="8999" handler={handler} value="8999"/>
+        <Card nombre="buzos3" descripcion="BUZO HOMBRE" tipo="Buzo hombre gris talle:L" precio="7999" handler={handler} value ="7999"/>
         </div>
         <div className="zapatos">
-        <Card nombre="zapatos1" descripcion="ZAPATO MUJER" tipo="Zapato mujer rojo talle: 35" precio="7500"/>
-        <Card nombre="zapatos2" descripcion="ZAPATO MUJER" tipo="Zapato mujer dorado talle: 30" precio="9999"/>
-        <Card nombre="zapatos3" descripcion="ZAPATO MUJER" tipo="Zapato mujer negro talle: 38" precio="6999"/>
+        <Card nombre="zapatos1" descripcion="ZAPATO MUJER" tipo="Zapato mujer rojo talle: 35" precio="7500" handler={handler} value="7500"/>
+        <Card nombre="zapatos2" descripcion="ZAPATO MUJER" tipo="Zapato mujer dorado talle: 30" precio="9999" handler={handler} value="9999"/>
+        <Card nombre="zapatos3" descripcion="ZAPATO MUJER" tipo="Zapato mujer negro talle: 38" precio="6999" handler={handler} value="6999"/>
         </div>
         <div className="vestidos">
-        <Card nombre="vestidos1" descripcion="VESTIDO MUJER" tipo="Vestido mujer color rojo talle: L" precio="7999"/>
-        <Card nombre="vestidos2" descripcion="VESTIDO MUJER" tipo="Vestido mujer color negro talle: M" precio="8500"/>
-        <Card nombre="vestidos3" descripcion="VESTIDO MUJER" tipo="Vestido mujer color blanco-rojo talle: L" precio="10999"/>
+        <Card nombre="vestidos1" descripcion="VESTIDO MUJER" tipo="Vestido mujer color rojo talle: L" precio="7999" handler={handler} value="7999"/>
+        <Card nombre="vestidos2" descripcion="VESTIDO MUJER" tipo="Vestido mujer color negro talle: M" precio="8500" handler={handler} value="8500"/>
+        <Card nombre="vestidos3" descripcion="VESTIDO MUJER" tipo="Vestido mujer color blanco-rojo talle: L" precio="10999" handler={handler} value="10999"/>
         </div>
       </div>
       <Footer/>

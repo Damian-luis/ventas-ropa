@@ -143,6 +143,13 @@ body {
 
 /* desktop styles */
 @media only screen and (min-width: 768px) { 
+  .menu-logo{
+    width: 200px;
+    
+  }
+  .menu-logo p{
+    font-size:25px;
+  }
   .menu-container {
     width: 100%;
   }

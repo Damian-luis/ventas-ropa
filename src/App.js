@@ -29,8 +29,10 @@ function App() {
         </div>
         <div className="cart-info">{estado?<p>{estado}</p>:<p>Tus productos</p>}</div>
       <div className="quienes-somos">
-          <p>En TUS ESTILOS nos enfocamos en la comodidad para vos o para tu empresa ofreciendote lo mejor en moda para que puedas sacar tu estilo adelante.<br/>
-          Contamos con un excelente equipo para poder asesorarte. Nuestro primer objetivo es tu comodidad.</p>
+          <p>En <span className="tus-estilos">TUS ESTILOS</span> nos enfocamos en la comodidad para vos o para tu empresa ofreciendote lo mejor en moda para que puedas sacar tu estilo adelante.<br/>
+          Contamos con un excelente equipo para poder asesorarte. Nuestro primer objetivo es tu comodidad.
+          Estamos a la vanguardia en lo que respecta a moda trayendote los mejores productos <br/>
+          Brindamos un excelente servicio para que puedas sacar tus ideas a flote.</p>
       </div>
       <div className="categorias">
         <div className="categorias-first">

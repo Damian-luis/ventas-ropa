@@ -22,12 +22,12 @@ export default function Nav(){
       <ul>
         <li>
           <a href="#signup">
-            Sign-up
+            Quienes somos
           </a>
         </li>
         <li>
           <a href="#login">
-            Login
+            Contacto
           </a>
         </li>
       </ul>

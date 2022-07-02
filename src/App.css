@@ -119,7 +119,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 20px;
+    text-align: center;
+    
   }
   .title h1{
     font-size:40px
@@ -142,8 +143,10 @@
   .quienes-somos{
     display: flex;
     justify-content:center;
+    
   }
   .quienes-somos p{
+    font-size:13px;
     width: 80%;
     text-align: center;
   }
@@ -172,16 +175,28 @@
     width: 100%;
     height: 800px
   }
+  .card img{
+    width: 100%;
+  }
+  .cards{
+    display: flex;
+    flex-direction: column;
+    row-gap:100px;
+  }
+  
   .buzos{
     display: flex;
     flex-direction: column;
+    row-gap:100px;
   }
   .zapatos{
     display: flex;
     flex-direction: column;
+    row-gap:100px;
   }
   .vestidos{
     display: flex;
     flex-direction: column;
+    row-gap:100px;
   }
 }

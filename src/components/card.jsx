@@ -8,6 +8,7 @@ export default function Card(props){
         <div className="card-text">
             <h4>{props.descripcion}</h4><br/>
             <p>{props.tipo}</p>
+            <p className="caro">{parseInt(props.precio)+1000}</p>
             <strong>Precio ${props.precio}</strong>
         </div>
         <div className="cart-container">

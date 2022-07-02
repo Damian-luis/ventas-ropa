@@ -3,6 +3,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 150px;
+}
+.caro{
+    color:red;
+    text-decoration: line-through;
 }
 .card img{
     width: 87%;
@@ -30,5 +35,8 @@
 
     .card{
         width: 100%;
+    }
+    .card img{
+        object-fit: contain;
     }
 }
